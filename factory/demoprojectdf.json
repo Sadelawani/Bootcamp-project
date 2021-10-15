@@ -1,0 +1,9 @@
+{
+	"name": "demoprojectdf",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "28c082a9-fdaf-4e4e-a0d5-d7190d208263",
+		"tenantId": "06dd38c2-83e9-4b42-98d5-bcbf4f660fa6"
+	}
+}
