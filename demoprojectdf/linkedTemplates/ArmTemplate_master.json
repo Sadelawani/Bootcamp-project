@@ -15,9 +15,17 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabaseLinkedService'"
 		},
+		"AzureSqlDatabaseLinkedService1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabaseLinkedService1'"
+		},
 		"AzureStorageLinkedService_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageLinkedService'"
+		},
+		"AzureStorageLinkedService1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureStorageLinkedService1'"
 		},
 		"SqlServerLinkedService_connectionString": {
 			"type": "secureString",
@@ -56,8 +64,14 @@
 					"AzureSqlDatabaseLinkedService_connectionString": {
 						"value": "[parameters('AzureSqlDatabaseLinkedService_connectionString')]"
 					},
+					"AzureSqlDatabaseLinkedService1_connectionString": {
+						"value": "[parameters('AzureSqlDatabaseLinkedService1_connectionString')]"
+					},
 					"AzureStorageLinkedService_connectionString": {
 						"value": "[parameters('AzureStorageLinkedService_connectionString')]"
+					},
+					"AzureStorageLinkedService1_connectionString": {
+						"value": "[parameters('AzureStorageLinkedService1_connectionString')]"
 					},
 					"SqlServerLinkedService_connectionString": {
 						"value": "[parameters('SqlServerLinkedService_connectionString')]"

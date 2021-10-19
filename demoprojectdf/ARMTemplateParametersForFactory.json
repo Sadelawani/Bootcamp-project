@@ -11,7 +11,13 @@
 		"AzureSqlDatabaseLinkedService_connectionString": {
 			"value": ""
 		},
+		"AzureSqlDatabaseLinkedService1_connectionString": {
+			"value": ""
+		},
 		"AzureStorageLinkedService_connectionString": {
+			"value": ""
+		},
+		"AzureStorageLinkedService1_connectionString": {
 			"value": ""
 		},
 		"SqlServerLinkedService_connectionString": {
