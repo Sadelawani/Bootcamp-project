@@ -1,0 +1,37 @@
+{
+	"name": "csv_movies_dynamic",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Blob_MSSQLTips",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"FolderName": {
+				"type": "string"
+			},
+			"DelimiterSymbol": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": {
+					"value": "@dataset().FolderName",
+					"type": "Expression"
+				},
+				"container": "input"
+			},
+			"columnDelimiter": {
+				"value": "@dataset().DelimiterSymbol",
+				"type": "Expression"
+			},
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
