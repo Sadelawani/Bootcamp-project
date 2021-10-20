@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "demoprojectdf"
 		},
+		"AzureBlobStorage1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
+		},
 		"AzureSqlDWLinkedService_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureSqlDWLinkedService'"
@@ -26,6 +30,14 @@
 		"AzureStorageLinkedService1_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageLinkedService1'"
+		},
+		"Blob_MSSQLTips_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'Blob_MSSQLTips'"
+		},
+		"SQLTest_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'SQLTest'"
 		},
 		"SqlServerLinkedService_connectionString": {
 			"type": "secureString",
@@ -58,6 +70,9 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"AzureBlobStorage1_connectionString": {
+						"value": "[parameters('AzureBlobStorage1_connectionString')]"
+					},
 					"AzureSqlDWLinkedService_connectionString": {
 						"value": "[parameters('AzureSqlDWLinkedService_connectionString')]"
 					},
@@ -73,12 +88,38 @@
 					"AzureStorageLinkedService1_connectionString": {
 						"value": "[parameters('AzureStorageLinkedService1_connectionString')]"
 					},
+					"Blob_MSSQLTips_connectionString": {
+						"value": "[parameters('Blob_MSSQLTips_connectionString')]"
+					},
+					"SQLTest_connectionString": {
+						"value": "[parameters('SQLTest_connectionString')]"
+					},
 					"SqlServerLinkedService_connectionString": {
 						"value": "[parameters('SqlServerLinkedService_connectionString')]"
 					}
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "demoprojectdf_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'demoprojectdf_ArmTemplate_0')]"
+			]
 		}
 	]
 }

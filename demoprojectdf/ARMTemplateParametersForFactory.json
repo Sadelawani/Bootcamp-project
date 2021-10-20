@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "demoprojectdf"
 		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
 		"AzureSqlDWLinkedService_connectionString": {
 			"value": ""
 		},
@@ -18,6 +21,12 @@
 			"value": ""
 		},
 		"AzureStorageLinkedService1_connectionString": {
+			"value": ""
+		},
+		"Blob_MSSQLTips_connectionString": {
+			"value": ""
+		},
+		"SQLTest_connectionString": {
 			"value": ""
 		},
 		"SqlServerLinkedService_connectionString": {
