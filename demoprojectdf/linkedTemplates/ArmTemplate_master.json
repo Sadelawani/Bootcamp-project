@@ -23,6 +23,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabaseLinkedService1'"
 		},
+		"AzureSqlDatabaselinkedService2_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabaselinkedService2'"
+		},
 		"AzureStorageLinkedService_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageLinkedService'"
@@ -30,6 +34,10 @@
 		"AzureStorageLinkedService1_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageLinkedService1'"
+		},
+		"AzureStorageLinkedService2_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureStorageLinkedService2'"
 		},
 		"Blob_MSSQLTips_connectionString": {
 			"type": "secureString",
@@ -82,11 +90,17 @@
 					"AzureSqlDatabaseLinkedService1_connectionString": {
 						"value": "[parameters('AzureSqlDatabaseLinkedService1_connectionString')]"
 					},
+					"AzureSqlDatabaselinkedService2_connectionString": {
+						"value": "[parameters('AzureSqlDatabaselinkedService2_connectionString')]"
+					},
 					"AzureStorageLinkedService_connectionString": {
 						"value": "[parameters('AzureStorageLinkedService_connectionString')]"
 					},
 					"AzureStorageLinkedService1_connectionString": {
 						"value": "[parameters('AzureStorageLinkedService1_connectionString')]"
+					},
+					"AzureStorageLinkedService2_connectionString": {
+						"value": "[parameters('AzureStorageLinkedService2_connectionString')]"
 					},
 					"Blob_MSSQLTips_connectionString": {
 						"value": "[parameters('Blob_MSSQLTips_connectionString')]"

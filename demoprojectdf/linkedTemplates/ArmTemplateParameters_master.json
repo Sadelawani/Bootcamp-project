@@ -17,10 +17,16 @@
 		"AzureSqlDatabaseLinkedService1_connectionString": {
 			"value": ""
 		},
+		"AzureSqlDatabaselinkedService2_connectionString": {
+			"value": ""
+		},
 		"AzureStorageLinkedService_connectionString": {
 			"value": ""
 		},
 		"AzureStorageLinkedService1_connectionString": {
+			"value": ""
+		},
+		"AzureStorageLinkedService2_connectionString": {
 			"value": ""
 		},
 		"Blob_MSSQLTips_connectionString": {
