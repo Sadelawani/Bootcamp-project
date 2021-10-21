@@ -1,0 +1,16 @@
+{
+	"name": "AzureSqlDatabaselinkedService2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=mysqlprojectserver.database.windows.net;initial catalog=dbproblem2;user id=sade",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIzY2Y0ZmVhMC03YTE2LTQ1MjctYjhkMi1kY2YwNmZmMjJmNDYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "TutorialIntegrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
