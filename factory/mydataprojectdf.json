@@ -1,0 +1,9 @@
+{
+	"name": "mydataprojectdf",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "147e6758-f386-405f-97b8-2cefd6a44dea",
+		"tenantId": "36f73be0-8ebb-4957-bd16-a0805f215df3"
+	}
+}
